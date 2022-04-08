@@ -522,10 +522,12 @@ figure.review .profile {
 }
 #contactus{
     height: 100vh;
+    margin-top: 80px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-self: center;
+    position: relative;
     background: #FF416C;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
@@ -754,65 +756,97 @@ input:focus , textarea:focus{
 }
 
 @media only screen and (max-width: 950px){
-     .body{
-         margin: 0;
-         padding: 10px;
-     }
-    .sidebar .icon{
-        display: none;
-    }
-    .sidebar.close{
-        display: none
-    }
-    .home{
-        width:100vw;
-        overflow-x: hidden;
-        
-    }
-   .sidebar.close~.home {
-    left:0px;
-    height:fit-content;
-    width:100vw;
-    }
-  .carousel-item img {
+.body {
+    margin: 0;
+    padding: 10px;
+}
+
+.sidebar .icon {
+    display: none;
+}
+
+.sidebar.close {
+    display: none
+}
+
+.home {
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+.sidebar.close~.home {
+    left: 0px;
+    height: fit-content;
+    width: 100vw;
+}
+
+.carousel-item img {
     filter: brightness(60%);
     height: 100vh;
-   }
-  .service-card-container{
-      flex-direction: column;
+}
 
-  }
-  .card{
-      width:100vw
-  }
-  .card2{
-      width: 100vw;
-  }
-  .review-container{
-      flex-direction: column;
-      width: 100vw;
-      flex-wrap: wrap;
+.service-card-container {
+    flex-direction: column;
+
+}
+
+.card {
+    width: 100vw
+}
+
+.card2 {
+    width: 100vw;
+}
+
+.review-container {
+    flex-direction: column;
+    width: 100vw;
+    flex-wrap: wrap;
     padding: 30px;
-  }
-  .review{
-      text-align: center;
-      min-width: 80%;
+}
 
-  }
-  .con_form{
-   min-width: 80vw;
-  }
-  #contactus{
-      flex-direction: column;
-      height: fit-content;
-  }
-  .left-side{
-      display: flex;
-      flex-direction: row;
-      width: 80vw;
-      margin: auto;
-      font-size: 16px;
-  }
-    
-   
+.review {
+    text-align: center;
+    min-width: 80%;
+
+}
+
+.con_form {
+    min-width: 95vw;
+    top: 10px;
+
+
+
+}
+
+#contactus {
+    flex-direction: column;
+    height: fit-content;
+}
+
+.left-side {
+    display: flex;
+
+    flex-direction: row;
+    width: 95vw;
+    margin: auto;
+    font-size: 1fr;
+}
+
+.details {
+    margin: 0px;
+    padding: 0px;
+}
+
+header .toggle {
+    width: 40px;
+    height: 40px;
+    top: 25px;
+    padding: 2px
+}
+
+.home {
+    overflow-x: scroll 0px;
+}
 }
